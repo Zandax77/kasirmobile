@@ -1,0 +1,6 @@
+{
+  "name": "Kasir UMKM Pintar",
+  "description": "Aplikasi kasir (POS) modern untuk UMKM dengan fitur inventaris barang terintegrasi, laporan penjualan harian, dan basis data SQLite.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

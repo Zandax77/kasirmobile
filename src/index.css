@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom scrollbar styling for webkit */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Custom printing styles for thermal receipt */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #print-receipt-container, #print-receipt-container * {
+    visibility: visible;
+  }
+  #print-receipt-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80mm; /* standard thermal paper width */
+    padding: 2mm;
+    font-size: 11px;
+    line-height: 1.2;
+    color: #000;
+    background: #fff;
+  }
+}
